@@ -1,11 +1,10 @@
 # 1.	Function to calculate factorial of a number.
 def fact(num):
-    counter = 1
+    counter = 0
     result = 1
-    while counter <= num:
-        result = counter*result
+    while counter < num:
         counter+=1
-    print(f"Factorial of {num} is {result}")
+        result = result*counter
+    return result
 
-
-# fact(3)
+print(fact(3))
